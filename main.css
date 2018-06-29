@@ -56,8 +56,9 @@ html {
 	width: 125px;
   height: 125px;
 	margin: auto;
-	position: relative;
-	top: 250px;
+	position: absolute;
+	top: 575px;
+	left: 900px;
 }
 
 .progress {
