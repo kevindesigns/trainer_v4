@@ -15,6 +15,52 @@ $(function () {
     barWidth: 5,
   });
 
+  // Progress Bar 
+  // Keep track of steps
+var step = 0;
+const totalSteps = 5;
+
+// Grab the DOM element
+const $current = document.querySelector('.current') // <div class="current" style="width: 100%"></div>
+
+
+// Calculate our new width
+let currentProgressWidth = 100 * (step / totalSteps) + '%';
+  
+// Set our current progress
+$current.style.width = currentProgressWidth;
+//$current.textContent = currentProgressWidth;
+
+
+function next() {
+  updateProgress();
+}
+
+
+function updateProgress() {
+  
+  // Check if we can move on
+  if (step >= totalSteps) return;
+  
+  
+  // 1. increase step
+  step += 1;
+  
+  // 2. calculate width
+  var newWidth = (step / totalSteps) * 100;
+  
+  // 3. set new width
+  $current.style.width = newWidth + '%';
+  
+  // optional: update text
+  //$current.textContent = newWidth + '%';
+}
+
+// next button
+document.querySelector('button.next').addEventListener('click', () => {
+  next();
+})
+
   // Create Modal 
   var createModal = function (content) {
     document.getElementById('modal-container').innerHTML = '<div id="modal1" class="modal1">' + content + '</div>';
@@ -89,6 +135,7 @@ $(function () {
 
       nextCmd();
       microphone.start();
+      next();
     },
     'Mind the gap': nextCmd,
     'Cheers mate': nextCmd,
