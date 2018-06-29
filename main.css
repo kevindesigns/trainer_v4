@@ -61,18 +61,18 @@ html {
 }
 
 .progress {
-  position: relative;
+  position: absolute;
   width: 125px;
   height: 15px;
   background: red;
   color: yellow;
 	line-height: 2.5rem;
-	top: 225px;
+	top: 625px;
 	z-index: 99;
 }
 
 .current {
-  position: absolute;
+  position: relative;
   width: 0;
   height: 100%;
   background: blue;
