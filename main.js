@@ -57,9 +57,9 @@ function updateProgress() {
 }
 
 // next button
-document.querySelector('button.next').addEventListener('click', () => {
-  next();
-})
+// document.querySelector('button.next').addEventListener('click', () => {
+//   next();
+// })
 
   // Create Modal 
   var createModal = function (content) {
