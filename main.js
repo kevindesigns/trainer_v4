@@ -102,6 +102,7 @@ function updateProgress() {
   const nextCmd = function () {
     // Cancel timer if its running
     if (timer) clearTimeout(timer);
+    next();
 
     // Play sound & get new phrase
     audio.play();
@@ -135,7 +136,7 @@ function updateProgress() {
 
       nextCmd();
       microphone.start();
-      next();
+    
     },
     'Mind the gap': nextCmd,
     'Cheers mate': nextCmd,
