@@ -56,19 +56,19 @@ html {
 	width: 125px;
   height: 125px;
 	margin: auto;
-	position: relative;
-	top: 375px;
-	left: 400px;
+	position: fixed;
+	top: 590px;
+	right: 100px;
 }
 
 .progress {
-  position: relative;
+  position: fixed;
   width: 125px;
   height: 15px;
   background: red;
   color: yellow;
 	line-height: 2.5rem;
-	top: 315px;
+	top: 650px;
 	z-index: 99;
 }
 
