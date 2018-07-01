@@ -12,7 +12,7 @@ $(function () {
     progressColor: 'purple',
     cursorColor: 'transparent',
     cursorWidth: 0,
-    barWidth: 5,
+    barWidth: 4,
   });
 
   // Progress Bar 
