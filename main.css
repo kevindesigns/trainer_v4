@@ -145,7 +145,7 @@ html {
 	}
   }
 
-#strategyText,
+#britishText,
 #blank {
 	width: 40%;
 	font-size: 1.5rem;
@@ -156,6 +156,6 @@ html {
 	top: 175px;
 }
 
-#strategyText {
+#britishText {
 	display: none;  
 }

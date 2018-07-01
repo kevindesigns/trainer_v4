@@ -1,7 +1,7 @@
 $(function () {
 
   // Elements
-  const $strategyText = $('#strategyText')
+  const $britishText = $('#britishText')
   const $blank = $('#blank')
   const $audio = $('audio');
 
@@ -131,7 +131,7 @@ function updateProgress() {
   const commands = {
     'okay': () => {
       currentPhrase = 0;
-      $strategyText.css('display', 'block');
+      $britishText.css('display', 'block');
       $blank.css('display', 'none');
 
       nextCmd();
@@ -165,7 +165,7 @@ function updateProgress() {
   // Start listening. You can call this here, or attach this call to an event, button, etc.
   annyang.start();
 
-  const obliqueStrategy = [
+  const britishPhrases = [
     '"Mind the gap"',
     '"Unexpected item in the bagging area"',
     '"Are you in the queue?"',
@@ -188,8 +188,8 @@ function updateProgress() {
   ];
 
   function generateRandomStrategy() {
-    const randomOffset = Math.floor(Math.random() * 100) % obliqueStrategy.length;
-    $('#strategyText .highlight').html(obliqueStrategy[randomOffset]);
+    const randomOffset = Math.floor(Math.random() * 100) % britishPhrases.length;
+    $('#britishText .highlight').html(britishPhrases[randomOffset]);
   }
 
   function showModal() {
