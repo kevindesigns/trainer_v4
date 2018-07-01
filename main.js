@@ -157,8 +157,6 @@ function updateProgress() {
     'Proper': nextCmd,
     'You alright mate': nextCmd,
     'Right yes of course': nextCmd,
-    'Its bait man': nextCmd,
-
   };
 
   // Add our commands to annyang
@@ -187,7 +185,6 @@ function updateProgress() {
     '"Proper"',
     '"You alright mate?"',
     '"Right, yes of course"',
-    '"Its bait man"',
   ];
 
   function generateRandomStrategy() {
