@@ -198,7 +198,7 @@ function updateProgress() {
     createModal(modal1);
 
     // Try Again Modal Random Score
-    document.getElementById('random-number').innerHTML = randomNumberGenerator(0, 23);
+    document.getElementById('random-number').innerHTML = randomNumberGenerator(0, 19);
 
     var button = document.getElementsByClassName('button')[0].onclick = function () {
       var modal = document.getElementById('modal1');
